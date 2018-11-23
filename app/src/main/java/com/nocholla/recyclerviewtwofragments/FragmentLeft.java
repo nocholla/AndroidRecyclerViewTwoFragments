@@ -50,25 +50,6 @@ public class FragmentLeft extends Fragment {
 
         if(retView != null) {
 
-            // Click this button will show the text in right fragment.
-            Button androidButton = retView.findViewById(R.id.fragmentLeftButtonAndroid);
-            androidButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-
-                    FragmentManager fragmentManager = fragmentBelongActivity.getSupportFragmentManager();
-
-                    // Get right Fragment object.
-                    Fragment rightFragment = fragmentManager.findFragmentById(R.id.fragment_right);
-
-                    // Get the TextView Object in right Fragment.
-                    final TextView rightFragmentTextView = rightFragment.getView().findViewById(R.id.fragmentRightTextView);
-
-                    // Set text in right Fragment TextView.
-                    rightFragmentTextView.setText("You click Android button.");
-                }
-            });
-
             // Black Button
             blackButton = retView.findViewById(R.id.btn_black);
             blackButton.setOnClickListener(new View.OnClickListener() {
@@ -82,6 +63,7 @@ public class FragmentLeft extends Fragment {
                     // Get the View Object in right Fragment.
                     final View rightFragmentBackgroundBlack = rightFragment.getView().findViewById(R.id.background_black);
                     rightFragmentBackgroundBlack.setBackgroundColor(Color.BLACK);
+                    rightFragmentBackgroundBlack.setVisibility(View.VISIBLE);
 
                 }
             });
@@ -99,7 +81,7 @@ public class FragmentLeft extends Fragment {
                     // Get the View Object in right Fragment.
                     final View rightFragmentBackgroundRed = rightFragment.getView().findViewById(R.id.background_red);
                     rightFragmentBackgroundRed.setBackgroundColor(Color.RED);
-
+                    rightFragmentBackgroundRed.setVisibility(View.VISIBLE);
 
                 }
             });
@@ -118,6 +100,7 @@ public class FragmentLeft extends Fragment {
                     // Get the View Object in right Fragment.
                     final View rightFragmentBackgroundGreen = rightFragment.getView().findViewById(R.id.background_green);
                     rightFragmentBackgroundGreen.setBackgroundColor(Color.GREEN);
+                    rightFragmentBackgroundGreen.setVisibility(View.VISIBLE);
 
                 }
             });
@@ -135,6 +118,7 @@ public class FragmentLeft extends Fragment {
                     // Get the View Object in right Fragment.
                     final View rightFragmentBackgroundBlue = rightFragment.getView().findViewById(R.id.background_blue);
                     rightFragmentBackgroundBlue.setBackgroundColor(Color.BLUE);
+                    rightFragmentBackgroundBlue.setVisibility(View.VISIBLE);
 
                 }
             });
@@ -150,8 +134,9 @@ public class FragmentLeft extends Fragment {
                     Fragment rightFragment = fragmentManager.findFragmentById(R.id.fragment_right);
 
                     // Get the View Object in right Fragment.
-                    final View rightFragmentBackgroundGrey = rightFragment.getView().findViewById(R.id.background_grey);
+                    final View rightFragmentBackgroundGrey = rightFragment.getView().findViewById(R.id.background_gray);
                     rightFragmentBackgroundGrey.setBackgroundColor(Color.GRAY);
+                    rightFragmentBackgroundGrey.setVisibility(View.VISIBLE);
 
                 }
             });

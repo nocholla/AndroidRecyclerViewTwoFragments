@@ -7,21 +7,24 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.graphics.Color;
 
 public class FragmentRight extends Fragment {
 
-    // This method will be invoked when the Fragment view object is created.
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public FragmentRight() {
+        // Required empty public constructor
+    }
+
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View retView = inflater.inflate(R.layout.fragment_right, container);
 
-        if(retView != null) {
-            TextView fragmentRightTextView = retView.findViewById(R.id.fragmentRightTextView);
-            fragmentRightTextView.setText("This is the default right fragment.");
-        }
+//        if(retView != null) {
+//            View rightFragmentBackgroundBlack = retView.findViewById(R.id.background_black);
+//            rightFragmentBackgroundBlack.setBackgroundColor(Color.BLACK);
+//        }
 
         return retView;
     }
+
 }
