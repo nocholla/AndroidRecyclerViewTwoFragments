@@ -39,9 +39,9 @@
         android:layout_height="wrap_content"
         android:text="Blue" />
 
-    <!-- Grey Button -->
+    <!-- Gray Button -->
     <Button
-        android:id="@+id/btn_grey"
+        android:id="@+id/btn_gray"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="Grey" />

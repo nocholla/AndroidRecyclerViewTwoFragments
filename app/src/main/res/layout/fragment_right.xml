@@ -11,39 +11,39 @@
         android:textColor="@android:color/holo_red_light"
         android:gravity="center"/>
 
-    <!--&lt;!&ndash; Black Background &ndash;&gt;-->
-    <!--<View-->
-        <!--android:id="@+id/background_black"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="0dp"-->
-        <!--android:layout_weight="1" />-->
+    <!-- Black Background -->
+    <View
+        android:id="@+id/background_black"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
-    <!--&lt;!&ndash; Red Background &ndash;&gt;-->
-    <!--<View-->
-        <!--android:id="@+id/background_red"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="0dp"-->
-        <!--android:layout_weight="1" />-->
+    <!-- Red Background -->
+    <View
+        android:id="@+id/background_red"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
-    <!--&lt;!&ndash; Green Background &ndash;&gt;-->
-    <!--<View-->
-        <!--android:id="@+id/background_green"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="0dp"-->
-        <!--android:layout_weight="1" />-->
+    <!-- Green Background -->
+    <View
+        android:id="@+id/background_green"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
-    <!--&lt;!&ndash; Blue Background &ndash;&gt;-->
-    <!--<View-->
-        <!--android:id="@+id/background_blue"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="0dp"-->
-        <!--android:layout_weight="1" />-->
+    <!-- Blue Background -->
+    <View
+        android:id="@+id/background_blue"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
-    <!--&lt;!&ndash; Grey Background &ndash;&gt;-->
-    <!--<View-->
-        <!--android:id="@+id/background_grey"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="0dp"-->
-        <!--android:layout_weight="1" />-->
+    <!-- Grey Background -->
+    <View
+        android:id="@+id/background_grey"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
 </LinearLayout>

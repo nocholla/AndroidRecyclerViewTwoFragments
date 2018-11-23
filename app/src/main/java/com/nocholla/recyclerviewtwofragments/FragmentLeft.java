@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.app.Activity;
+import android.graphics.Color;
 
 public class FragmentLeft extends Fragment {
 
@@ -21,7 +22,7 @@ public class FragmentLeft extends Fragment {
     private Button redButton;
     private Button greenButton;
     private Button blueButton;
-    private Button greyButton;
+    private Button grayButton;
 
 //    public static FragmentLeft newInstance() {
 //        FragmentLeft fragment = new FragmentLeft();
@@ -38,7 +39,6 @@ public class FragmentLeft extends Fragment {
 //        mOnColorChooseListener = (OnColorChooseListener) activity;
 //    }
 
-    // This method will be invoked when the Fragment view object is created.
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -61,7 +61,7 @@ public class FragmentLeft extends Fragment {
                     // Get right Fragment object.
                     Fragment rightFragment = fragmentManager.findFragmentById(R.id.fragment_right);
 
-                    // Get the TextView object in right Fragment.
+                    // Get the TextView Object in right Fragment.
                     final TextView rightFragmentTextView = rightFragment.getView().findViewById(R.id.fragmentRightTextView);
 
                     // Set text in right Fragment TextView.
@@ -69,51 +69,92 @@ public class FragmentLeft extends Fragment {
                 }
             });
 
-//            // Black Button
-//            blackButton = retView.findViewById(R.id.btn_black);
-//            blackButton.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//
-//                }
-//            });
-//
-//            // Red Button
-//            redButton = retView.findViewById(R.id.btn_red);
-//            redButton.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//
-//                }
-//            });
-//
-//
-//            // Green Button
-//            greenButton = retView.findViewById(R.id.btn_green);
-//            greenButton.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//
-//                }
-//            });
-//
-//            // Blue Button
-//            blueButton = retView.findViewById(R.id.btn_blue);
-//            blueButton.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//
-//                }
-//            });
-//
-//            // Grey Button
-//            greyButton = retView.findViewById(R.id.btn_grey);
-//            greyButton.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//
-//                }
-//            });
+            // Black Button
+            blackButton = retView.findViewById(R.id.btn_black);
+            blackButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    FragmentManager fragmentManager = fragmentBelongActivity.getSupportFragmentManager();
+
+                    // Get right Fragment Object.
+                    Fragment rightFragment = fragmentManager.findFragmentById(R.id.fragment_right);
+
+                    // Get the View Object in right Fragment.
+                    final View rightFragmentBackgroundBlack = rightFragment.getView().findViewById(R.id.background_black);
+                    rightFragmentBackgroundBlack.setBackgroundColor(Color.BLACK);
+
+                }
+            });
+
+            // Red Button
+            redButton = retView.findViewById(R.id.btn_red);
+            redButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    FragmentManager fragmentManager = fragmentBelongActivity.getSupportFragmentManager();
+
+                    // Get right Fragment Object.
+                    Fragment rightFragment = fragmentManager.findFragmentById(R.id.fragment_right);
+
+                    // Get the View Object in right Fragment.
+                    final View rightFragmentBackgroundRed = rightFragment.getView().findViewById(R.id.background_red);
+                    rightFragmentBackgroundRed.setBackgroundColor(Color.RED);
+
+
+                }
+            });
+
+
+            // Green Button
+            greenButton = retView.findViewById(R.id.btn_green);
+            greenButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    FragmentManager fragmentManager = fragmentBelongActivity.getSupportFragmentManager();
+
+                    // Get right Fragment Object.
+                    Fragment rightFragment = fragmentManager.findFragmentById(R.id.fragment_right);
+
+                    // Get the View Object in right Fragment.
+                    final View rightFragmentBackgroundGreen = rightFragment.getView().findViewById(R.id.background_green);
+                    rightFragmentBackgroundGreen.setBackgroundColor(Color.GREEN);
+
+                }
+            });
+
+            // Blue Button
+            blueButton = retView.findViewById(R.id.btn_blue);
+            blueButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    FragmentManager fragmentManager = fragmentBelongActivity.getSupportFragmentManager();
+
+                    // Get right Fragment Object.
+                    Fragment rightFragment = fragmentManager.findFragmentById(R.id.fragment_right);
+
+                    // Get the View Object in right Fragment.
+                    final View rightFragmentBackgroundBlue = rightFragment.getView().findViewById(R.id.background_blue);
+                    rightFragmentBackgroundBlue.setBackgroundColor(Color.BLUE);
+
+                }
+            });
+
+            // Grey Button
+            grayButton = retView.findViewById(R.id.btn_gray);
+            grayButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    FragmentManager fragmentManager = fragmentBelongActivity.getSupportFragmentManager();
+
+                    // Get right Fragment Object.
+                    Fragment rightFragment = fragmentManager.findFragmentById(R.id.fragment_right);
+
+                    // Get the View Object in right Fragment.
+                    final View rightFragmentBackgroundGrey = rightFragment.getView().findViewById(R.id.background_grey);
+                    rightFragmentBackgroundGrey.setBackgroundColor(Color.GRAY);
+
+                }
+            });
 
 
         }
