@@ -11,22 +11,6 @@
         android:textSize="20dp"
         android:textAllCaps="false"/>
 
-    <!--<Button-->
-        <!--android:id="@+id/fragmentLeftButtonIos"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="IOS"-->
-        <!--android:textSize="20dp"-->
-        <!--android:textAllCaps="false"/>-->
-
-    <!--<Button-->
-        <!--android:id="@+id/fragmentLeftButtonWindows"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="Windows"-->
-        <!--android:textSize="20dp"-->
-        <!--android:textAllCaps="false"/>-->
-
     <!-- Black Button -->
     <Button
         android:id="@+id/btn_black"

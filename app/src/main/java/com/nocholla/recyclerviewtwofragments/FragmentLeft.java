@@ -116,28 +116,6 @@ public class FragmentLeft extends Fragment {
 //            });
 
 
-
-            // Click this button will show a Toast popup.
-//            Button iosButton = retView.findViewById(R.id.fragmentLeftButtonIos);
-//            iosButton.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//                    Toast.makeText(fragmentBelongActivity, "You click IOS button.", Toast.LENGTH_SHORT).show();
-//                }
-//            });
-
-
-            // Click this button will show an alert dialog.
-//            Button windowsButton = retView.findViewById(R.id.fragmentLeftButtonWindows);
-//            windowsButton.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//                    AlertDialog alertDialog = new AlertDialog.Builder(fragmentBelongActivity).create();
-//                    alertDialog.setMessage("You click Windows button.");
-//                    alertDialog.show();
-//                }
-//            });
-
         }
 
         return retView;
