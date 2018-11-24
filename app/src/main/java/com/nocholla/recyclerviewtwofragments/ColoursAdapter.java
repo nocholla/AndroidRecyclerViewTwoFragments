@@ -1,6 +1,11 @@
 package com.nocholla.recyclerviewtwofragments;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -43,6 +48,25 @@ public class ColoursAdapter extends RecyclerView.Adapter<ColoursAdapter.ViewHold
             @Override
             public void onClick(View v) {
                 Toast.makeText(context, colourName, Toast.LENGTH_SHORT).show();
+
+                Bundle bundle = new Bundle();
+                bundle.putString("name", colourName);
+
+                FragmentRight fragmentRight = new FragmentRight();
+                fragmentRight.setArguments(bundle);
+
+                AppCompatActivity activity = (AppCompatActivity) v.getContext();
+
+                FragmentManager fragmentManager = activity.getSupportFragmentManager();
+
+                // Get right Fragment Object
+                Fragment rightFragment = fragmentManager.findFragmentById(R.id.fragment_right);
+
+                // Get the View Object in right Fragment
+                final View rightFragmentBackgroundColor = rightFragment.getView().findViewById(R.id.background_color);
+
+                rightFragmentBackgroundColor.setBackgroundColor(Color.BLACK);
+
             }
         });
 
@@ -66,45 +90,6 @@ public class ColoursAdapter extends RecyclerView.Adapter<ColoursAdapter.ViewHold
         }
 
     }
-
-//    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
-//        TextView colourName;
-//
-//        public ViewHolder(View itemView, final Context ctx) {
-//            super(itemView);
-//            context = ctx;
-//
-//            colourName = itemView.findViewById(R.id.name);
-//
-//            itemView.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                    Colour colour = coloursList.get(getAdapterPosition());
-//
-//                    String name = colour.getName();
-//                    Log.d("DEBUG COLOUR NAME", name);
-//
-////                    Bundle bundle = new Bundle();
-////                    bundle.putString("name", name);
-////
-////                    FragmentRight fragmentRight = new FragmentRight();
-////                    fragmentRight.setArguments(bundle);
-//
-//                    //Intent intent = new Intent(context, FragmentRight.class);
-//                    //intent.putExtra("EXTRA_COLOUR_NAME", cName);
-//
-//                    //ctx.startActivity(intent);
-//
-//                }
-//            });
-//
-//        }
-//
-//        @Override
-//        public void onClick(View v) {
-//
-//        }
-//    }
 
 }
 
