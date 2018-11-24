@@ -62,8 +62,20 @@ public class FragmentLeft extends Fragment {
 
                     // Get the View Object in right Fragment.
                     final View rightFragmentBackgroundBlack = rightFragment.getView().findViewById(R.id.background_black);
+                    final View rightFragmentBackgroundRed = rightFragment.getView().findViewById(R.id.background_red);
+                    final View rightFragmentBackgroundGreen = rightFragment.getView().findViewById(R.id.background_green);
+                    final View rightFragmentBackgroundBlue = rightFragment.getView().findViewById(R.id.background_blue);
+                    final View rightFragmentBackgroundGray = rightFragment.getView().findViewById(R.id.background_gray);
+
+                    // Set Background Color
                     rightFragmentBackgroundBlack.setBackgroundColor(Color.BLACK);
+
+                    // Set Visibility
                     rightFragmentBackgroundBlack.setVisibility(View.VISIBLE);
+                    rightFragmentBackgroundRed.setVisibility(View.INVISIBLE);
+                    rightFragmentBackgroundGreen.setVisibility(View.INVISIBLE);
+                    rightFragmentBackgroundBlue.setVisibility(View.INVISIBLE);
+                    rightFragmentBackgroundGray.setVisibility(View.INVISIBLE);
 
                 }
             });
@@ -79,9 +91,21 @@ public class FragmentLeft extends Fragment {
                     Fragment rightFragment = fragmentManager.findFragmentById(R.id.fragment_right);
 
                     // Get the View Object in right Fragment.
+                    final View rightFragmentBackgroundBlack = rightFragment.getView().findViewById(R.id.background_black);
                     final View rightFragmentBackgroundRed = rightFragment.getView().findViewById(R.id.background_red);
+                    final View rightFragmentBackgroundGreen = rightFragment.getView().findViewById(R.id.background_green);
+                    final View rightFragmentBackgroundBlue = rightFragment.getView().findViewById(R.id.background_blue);
+                    final View rightFragmentBackgroundGray = rightFragment.getView().findViewById(R.id.background_gray);
+
+                    // Set Background Color
                     rightFragmentBackgroundRed.setBackgroundColor(Color.RED);
+
+                    // Set Visibility
+                    rightFragmentBackgroundBlack.setVisibility(View.INVISIBLE);
                     rightFragmentBackgroundRed.setVisibility(View.VISIBLE);
+                    rightFragmentBackgroundGreen.setVisibility(View.INVISIBLE);
+                    rightFragmentBackgroundBlue.setVisibility(View.INVISIBLE);
+                    rightFragmentBackgroundGray.setVisibility(View.INVISIBLE);
 
                 }
             });
@@ -98,9 +122,21 @@ public class FragmentLeft extends Fragment {
                     Fragment rightFragment = fragmentManager.findFragmentById(R.id.fragment_right);
 
                     // Get the View Object in right Fragment.
+                    final View rightFragmentBackgroundBlack = rightFragment.getView().findViewById(R.id.background_black);
+                    final View rightFragmentBackgroundRed = rightFragment.getView().findViewById(R.id.background_red);
                     final View rightFragmentBackgroundGreen = rightFragment.getView().findViewById(R.id.background_green);
+                    final View rightFragmentBackgroundBlue = rightFragment.getView().findViewById(R.id.background_blue);
+                    final View rightFragmentBackgroundGray = rightFragment.getView().findViewById(R.id.background_gray);
+
+                    // Set Background Color
                     rightFragmentBackgroundGreen.setBackgroundColor(Color.GREEN);
+
+                    // Set Visibility
+                    rightFragmentBackgroundBlack.setVisibility(View.INVISIBLE);
+                    rightFragmentBackgroundRed.setVisibility(View.INVISIBLE);
                     rightFragmentBackgroundGreen.setVisibility(View.VISIBLE);
+                    rightFragmentBackgroundBlue.setVisibility(View.INVISIBLE);
+                    rightFragmentBackgroundGray.setVisibility(View.INVISIBLE);
 
                 }
             });
@@ -116,9 +152,21 @@ public class FragmentLeft extends Fragment {
                     Fragment rightFragment = fragmentManager.findFragmentById(R.id.fragment_right);
 
                     // Get the View Object in right Fragment.
+                    final View rightFragmentBackgroundBlack = rightFragment.getView().findViewById(R.id.background_black);
+                    final View rightFragmentBackgroundRed = rightFragment.getView().findViewById(R.id.background_red);
+                    final View rightFragmentBackgroundGreen = rightFragment.getView().findViewById(R.id.background_green);
                     final View rightFragmentBackgroundBlue = rightFragment.getView().findViewById(R.id.background_blue);
+                    final View rightFragmentBackgroundGray = rightFragment.getView().findViewById(R.id.background_gray);
+
+                    // Set Background Color
                     rightFragmentBackgroundBlue.setBackgroundColor(Color.BLUE);
+
+                    // Set Visibility
+                    rightFragmentBackgroundBlack.setVisibility(View.INVISIBLE);
+                    rightFragmentBackgroundRed.setVisibility(View.INVISIBLE);
+                    rightFragmentBackgroundGreen.setVisibility(View.INVISIBLE);
                     rightFragmentBackgroundBlue.setVisibility(View.VISIBLE);
+                    rightFragmentBackgroundGray.setVisibility(View.INVISIBLE);
 
                 }
             });
@@ -134,9 +182,21 @@ public class FragmentLeft extends Fragment {
                     Fragment rightFragment = fragmentManager.findFragmentById(R.id.fragment_right);
 
                     // Get the View Object in right Fragment.
-                    final View rightFragmentBackgroundGrey = rightFragment.getView().findViewById(R.id.background_gray);
-                    rightFragmentBackgroundGrey.setBackgroundColor(Color.GRAY);
-                    rightFragmentBackgroundGrey.setVisibility(View.VISIBLE);
+                    final View rightFragmentBackgroundBlack = rightFragment.getView().findViewById(R.id.background_black);
+                    final View rightFragmentBackgroundRed = rightFragment.getView().findViewById(R.id.background_red);
+                    final View rightFragmentBackgroundGreen = rightFragment.getView().findViewById(R.id.background_green);
+                    final View rightFragmentBackgroundBlue = rightFragment.getView().findViewById(R.id.background_blue);
+                    final View rightFragmentBackgroundGray = rightFragment.getView().findViewById(R.id.background_gray);
+
+                    // Set Background Color
+                    rightFragmentBackgroundGray.setBackgroundColor(Color.GRAY);
+
+                    // Set Visibility
+                    rightFragmentBackgroundBlack.setVisibility(View.INVISIBLE);
+                    rightFragmentBackgroundRed.setVisibility(View.INVISIBLE);
+                    rightFragmentBackgroundGreen.setVisibility(View.INVISIBLE);
+                    rightFragmentBackgroundBlue.setVisibility(View.INVISIBLE);
+                    rightFragmentBackgroundGray.setVisibility(View.VISIBLE);
 
                 }
             });
