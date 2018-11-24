@@ -65,7 +65,23 @@ public class ColoursAdapter extends RecyclerView.Adapter<ColoursAdapter.ViewHold
                 // Get the View Object in right Fragment
                 final View rightFragmentBackgroundColor = rightFragment.getView().findViewById(R.id.background_color);
 
-                rightFragmentBackgroundColor.setBackgroundColor(Color.BLACK);
+                switch (colourName) {
+                    case "Black":
+                        rightFragmentBackgroundColor.setBackgroundColor(Color.BLACK);
+                        break;
+                    case "Red":
+                        rightFragmentBackgroundColor.setBackgroundColor(Color.RED);
+                        break;
+                    case "Green":
+                        rightFragmentBackgroundColor.setBackgroundColor(Color.GREEN);
+                        break;
+                    case "Blue":
+                        rightFragmentBackgroundColor.setBackgroundColor(Color.BLUE);
+                        break;
+                    case "Gray":
+                        rightFragmentBackgroundColor.setBackgroundColor(Color.GRAY);
+                        break;
+                }
 
             }
         });
