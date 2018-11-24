@@ -1,6 +1,7 @@
 package com.nocholla.recyclerviewtwofragments;
 
 import android.content.Context;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -8,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import java.util.List;
+import android.widget.Toast;
 
 public class ColoursAdapter extends RecyclerView.Adapter<ColoursAdapter.ViewHolder>  {
     private Context context;
@@ -27,13 +29,23 @@ public class ColoursAdapter extends RecyclerView.Adapter<ColoursAdapter.ViewHold
     }
 
     @Override
-    public void onBindViewHolder(final ColoursAdapter.ViewHolder holder, int position) {
-        Colour colour = coloursList.get(position);
+    public void onBindViewHolder(final ColoursAdapter.ViewHolder holder, final int position) {
+        final Colour colour = coloursList.get(position);
 
-        String colourName = colour.getName();
+        final String colourName = colour.getName();
         Log.d("DEBUG COLOR NAME", colourName);
 
+        // Text View
         holder.colourName.setText(colourName);
+
+        // Card View
+        holder.cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context, colourName, Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
 
     @Override
@@ -41,38 +53,58 @@ public class ColoursAdapter extends RecyclerView.Adapter<ColoursAdapter.ViewHold
         return coloursList.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    public class ViewHolder extends RecyclerView.ViewHolder {
         TextView colourName;
+        CardView cardView;
 
         public ViewHolder(View itemView, final Context ctx) {
             super(itemView);
             context = ctx;
 
             colourName = itemView.findViewById(R.id.name);
-
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Colour colour = coloursList.get(getAdapterPosition());
-
-                    String cName = colour.getName();
-                    Log.d("DEBUG COLOUR NAME", cName);
-
-                    //Intent intent = new Intent(context, ColoursDetailsLipMatteKenyaActivity.class);
-                    //intent.putExtra("EXTRA_COLOUR_NAME", pName);
-
-                    //ctx.startActivity(intent);
-
-                }
-            });
-
+            cardView = itemView.findViewById(R.id.cview_color);
         }
 
-        @Override
-        public void onClick(View v) {
-
-        }
     }
+
+//    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+//        TextView colourName;
+//
+//        public ViewHolder(View itemView, final Context ctx) {
+//            super(itemView);
+//            context = ctx;
+//
+//            colourName = itemView.findViewById(R.id.name);
+//
+//            itemView.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    Colour colour = coloursList.get(getAdapterPosition());
+//
+//                    String name = colour.getName();
+//                    Log.d("DEBUG COLOUR NAME", name);
+//
+////                    Bundle bundle = new Bundle();
+////                    bundle.putString("name", name);
+////
+////                    FragmentRight fragmentRight = new FragmentRight();
+////                    fragmentRight.setArguments(bundle);
+//
+//                    //Intent intent = new Intent(context, FragmentRight.class);
+//                    //intent.putExtra("EXTRA_COLOUR_NAME", cName);
+//
+//                    //ctx.startActivity(intent);
+//
+//                }
+//            });
+//
+//        }
+//
+//        @Override
+//        public void onClick(View v) {
+//
+//        }
+//    }
 
 }
 

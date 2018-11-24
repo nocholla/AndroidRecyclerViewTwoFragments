@@ -1,12 +1,15 @@
 package com.nocholla.recyclerviewtwofragments;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.util.Log;
 
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -44,7 +47,6 @@ public class FragmentLeft extends Fragment {
 
         if(retView != null) {
 
-            //---------------------------------------------------------------------------------------------
             // RecyclerView
             recyclerView = retView.findViewById(R.id.recycler_view);
             coloursList = new ArrayList<>();
@@ -58,13 +60,6 @@ public class FragmentLeft extends Fragment {
 
             // Color Data
             colourData();
-            //---------------------------------------------------------------------------------------------
-
-
-
-
-
-
 
 //            // Black Button
 //            blackButton = retView.findViewById(R.id.btn_black);
@@ -84,7 +79,7 @@ public class FragmentLeft extends Fragment {
 //                    final View rightFragmentBackgroundGray = rightFragment.getView().findViewById(R.id.background_gray);
 //
 //                    // Set Background Colour
-//                    rightFragmentBackgroundBlack.setBackgroundColor(Colour.BLACK);
+//                    rightFragmentBackgroundBlack.setBackgroundColor(Color.BLACK);
 //
 //                    // Set Visibility
 //                    rightFragmentBackgroundBlack.setVisibility(View.VISIBLE);
@@ -114,7 +109,7 @@ public class FragmentLeft extends Fragment {
 //                    final View rightFragmentBackgroundGray = rightFragment.getView().findViewById(R.id.background_gray);
 //
 //                    // Set Background Colour
-//                    rightFragmentBackgroundRed.setBackgroundColor(Colour.RED);
+//                    rightFragmentBackgroundRed.setBackgroundColor(Color.RED);
 //
 //                    // Set Visibility
 //                    rightFragmentBackgroundBlack.setVisibility(View.INVISIBLE);
@@ -145,7 +140,7 @@ public class FragmentLeft extends Fragment {
 //                    final View rightFragmentBackgroundGray = rightFragment.getView().findViewById(R.id.background_gray);
 //
 //                    // Set Background Colour
-//                    rightFragmentBackgroundGreen.setBackgroundColor(Colour.GREEN);
+//                    rightFragmentBackgroundGreen.setBackgroundColor(Color.GREEN);
 //
 //                    // Set Visibility
 //                    rightFragmentBackgroundBlack.setVisibility(View.INVISIBLE);
@@ -175,7 +170,7 @@ public class FragmentLeft extends Fragment {
 //                    final View rightFragmentBackgroundGray = rightFragment.getView().findViewById(R.id.background_gray);
 //
 //                    // Set Background Colour
-//                    rightFragmentBackgroundBlue.setBackgroundColor(Colour.BLUE);
+//                    rightFragmentBackgroundBlue.setBackgroundColor(Color.BLUE);
 //
 //                    // Set Visibility
 //                    rightFragmentBackgroundBlack.setVisibility(View.INVISIBLE);
@@ -205,7 +200,7 @@ public class FragmentLeft extends Fragment {
 //                    final View rightFragmentBackgroundGray = rightFragment.getView().findViewById(R.id.background_gray);
 //
 //                    // Set Background Colour
-//                    rightFragmentBackgroundGray.setBackgroundColor(Colour.GRAY);
+//                    rightFragmentBackgroundGray.setBackgroundColor(Color.GRAY);
 //
 //                    // Set Visibility
 //                    rightFragmentBackgroundBlack.setVisibility(View.INVISIBLE);
