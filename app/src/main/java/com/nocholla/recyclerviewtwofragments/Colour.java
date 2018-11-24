@@ -1,13 +1,13 @@
 package com.nocholla.recyclerviewtwofragments;
 
-public class Color {
+public class Colour {
     private String name;
 
-    public Color() {
+    public Colour() {
 
     }
 
-    public Color(String name) {
+    public Colour(String name) {
         this.name = name;
     }
 

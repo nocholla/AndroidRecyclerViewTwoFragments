@@ -6,17 +6,19 @@
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_eight">
 
         <TextView
             android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:paddingLeft="16dp"
-            android:paddingBottom="4dp"
-            android:text="Blue"
-            android:textSize="24dp" />
+            android:layout_marginTop="@dimen/margin_eight"
+            android:layout_marginBottom="@dimen/margin_eight"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/color_blue"
+            android:textSize="@dimen/text_twenty" />
 
     </android.support.v7.widget.CardView>
 

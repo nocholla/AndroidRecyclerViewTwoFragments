@@ -1,3 +1,7 @@
 <resources>
+    <!-- App Name -->
     <string name="app_name">RecyclerViewTwoFragments</string>
+
+    <!-- Color -->
+    <string name="color_blue">Blue</string>
 </resources>
