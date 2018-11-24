@@ -15,7 +15,7 @@ public class FragmentRight extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View retView = inflater.inflate(R.layout.fragment_right, container);
-        
+
         return retView;
     }
 
