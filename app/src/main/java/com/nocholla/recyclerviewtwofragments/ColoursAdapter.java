@@ -30,7 +30,10 @@ public class ColoursAdapter extends RecyclerView.Adapter<ColoursAdapter.ViewHold
     public void onBindViewHolder(final ColoursAdapter.ViewHolder holder, int position) {
         Colour colour = coloursList.get(position);
 
-        holder.colourName.setText(colour.getName());
+        String colourName = colour.getName();
+        Log.d("DEBUG COLOR NAME", colourName);
+
+        holder.colourName.setText(colourName);
     }
 
     @Override
