@@ -8,12 +8,18 @@
         android:id="@+id/cview_color"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_eight"
+        android:layout_marginStart="@dimen/margin_eight"
+        android:layout_marginRight="@dimen/margin_eight"
+        android:layout_marginEnd="@dimen/margin_eight"
+        android:backgroundTint="@color/colorPrimaryDark"
         android:layout_marginTop="@dimen/margin_eight">
 
         <TextView
             android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/text_white"
             android:layout_marginTop="@dimen/margin_eight"
             android:layout_marginBottom="@dimen/margin_eight"
             android:layout_gravity="center"
