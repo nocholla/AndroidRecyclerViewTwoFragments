@@ -1,4 +1,4 @@
-# EdurekaRecyclerViewTwoFragments
+# Android RecyclerView Two Fragments
 
 ![recyclerview fragments 1](https://user-images.githubusercontent.com/801612/50356293-4cec2d80-0506-11e9-887b-b248866f83b8.jpeg)
 
